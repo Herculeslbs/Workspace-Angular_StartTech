@@ -1,0 +1,15 @@
+<mat-toolbar>
+   <div class="container">
+    <div class="texto">
+        <p>{{ title }} | {{ copyright }} por {{ developer }}</p>
+    </div>
+    <div class="icones">
+        <ul>
+            <li *ngFor="let footer of redesSociais">
+                <a href="{{ footer.link }}"></a>
+                <img src="{{ footer.icone }}" alt="{{ footer.nome }}">
+            </li>
+        </ul>
+    </div>
+   </div>
+</mat-toolbar>

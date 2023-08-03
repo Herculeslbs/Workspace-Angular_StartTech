@@ -1,0 +1,34 @@
+@import "../app.component.scss";
+
+mat-toolbar {
+    background-color: #3F8EC6;
+    color: $branco;
+    margin-top: 50px;
+    .container {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .texto {
+        font-size: $pequena;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        font-size: $grande;
+    }
+    img {
+        filter: invert(100%);
+    }
+}
+
+
+#img {
+    color: white !important;
+    padding-top: 20px; 
+}
