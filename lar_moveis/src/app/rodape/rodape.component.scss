@@ -1,34 +1,40 @@
 @import "../app.component.scss";
 
-mat-toolbar {
-    background-color: #3F8EC6;
+footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    background-color: $cor-secundaria;
     color: $branco;
-    margin-top: 50px;
     .container {
+        width: 1140px;
         display: flex;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .texto {
-        font-size: $pequena;
-    }
-    ul {
-        list-style-type: none;
-    }
-    li {
-        display: inline-block;
-        font-size: $grande;
-    }
-    img {
-        filter: invert(100%);
-    }
-}
+        margin: auto;
+        .copyright {
+            width: 75%;
+            font-size: $media;
+            font-family: $fonte-secundaria;
+            p {
+                padding-top: 30px;
+            }
+        }
+        .social-links {
+            width: 25%;
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                flex-direction: row-reverse;
+                li {
+                    list-style-type: none;
+                    padding-top: 20px;
+                    padding-right: 16px;
+                    img {
+                        filter: invert(100%);
+                    }
+                }
+            }
 
-
-#img {
-    color: white !important;
-    padding-top: 20px; 
+        }
+    }
 }

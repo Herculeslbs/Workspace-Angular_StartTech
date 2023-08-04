@@ -1,15 +1,16 @@
-<mat-toolbar>
-   <div class="container">
-    <div class="texto">
-        <p>{{ title }} | {{ copyright }} por {{ developer }}</p>
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <p>{{ title }} | {{ copyright }} por {{ developer }}.</p>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li *ngFor="let redeSocial of redesSociais">
+                    <a [href]="redeSocial.link" target="_blank">
+                        <img src="{{ redeSocial.icone }}" alt="{{ redeSocial.nome }}" />
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="icones">
-        <ul>
-            <li *ngFor="let footer of redesSociais">
-                <a href="{{ footer.link }}"></a>
-                <img src="{{ footer.icone }}" alt="{{ footer.nome }}">
-            </li>
-        </ul>
-    </div>
-   </div>
-</mat-toolbar>
+</footer>
